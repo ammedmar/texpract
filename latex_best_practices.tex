@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	\title{\LaTeX\, best practices}
+	\date{\today}
+	\maketitle
+	
+	\begin{enumerate}
+		\item Use \verb|\colon| instead of \verb|:| for defining functions.
+		\item Leave space around most operators.
+		For example, \verb|f \colon X \to Y| is superior to \verb|f:X\to Y|.
+		Possible exception are guided by readability, for example:
+		
+		\verb|\begin{equation*}| \\
+		\verb|\sum_{i=1}^n = \frac{n(n+1)}{2}| \\
+		\verb|\end{equation*}|
+		
+		\item No punctuation inside math mode: \verb|$a+b$,| instead of \verb|$a+b,$|.
+		\item No line breaks in the middle of sentences.
+		\item Use line breaks at the end of sentences.
+		\item No double blank spaces.
+		\item No blank spaces at the end of sentences.
+		\item All environments with the exception of \verb|document| and those in the AMS display equation family, e.g., \verb|equation| or \verb|align| should be tabbed.
+		For example,
+		
+		\verb|\begin{lemma*}| \\
+		\verb|    Statement.| \\
+		\verb|\end{lemma*}|
+		
+		\item Do not use \verb|$$...$$| for display equation, instead use one of the environments in the AMS display equation family or
+		
+		\verb|\[| \\
+		\verb|...| \\
+		\verb|\]|
+	\end{enumerate}
+\end{document}

@@ -17,7 +17,7 @@
 		Possible exception are guided by readability, for example:
 		\begin{verbatim}
 		\begin{equation}
-		\sum_{i=1}^n = \frac{n(n+1)}{2}.
+		    \sum_{i=1}^n = \frac{n(n+1)}{2}.
 		\end{equation}
 		\end{verbatim}
 
@@ -28,11 +28,11 @@
 
 		\item Use line breaks at the end of sentences.
 
-		\item No double blank spaces.
+		\item No double blank spaces or trailing blank spaces.
 
 		\item No blank spaces at the end of sentences.
 
-		\item All environments with the exception of \verb|document| and those in the AMS display equation family, e.g., \verb|equation| or \verb|align| should be tabbed.
+		\item All named environments with the possible exception of \verb|document| should be tabbed.
 		For example,
 		\begin{verbatim}
 		\begin{lemma*}
@@ -43,11 +43,12 @@
 		\item Do not use \verb|$$...$$| for display equation, instead use one of the environments in the AMS display equation family or
 		\begin{verbatim}
 		\[
-		Math.
+
 		\]
 		\end{verbatim}
 
-		\item Leave a blank line before and after tabbed environment, i.e., all environments except those in the AMS display equation family.
+		\item Leave a blank line before and after most environment.
+		Possible exceptions are AMS display equation family.
 
 		\item Leave a blank line before and after sections and subsections.
 	\end{enumerate}
